@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button {
+  outline: none;
+  border: none;
+  appearance: none;
+  background: none;
+
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+  background-color: rgb(104, 4, 96);
+  padding: 75px
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todo-app {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+  max-width: 525px;
+  padding: 12px 12px;
+  background-color: rgb(52, 47, 70);
+}
+
+.todo-app h2 {
+  color: white;
+  margin: 8px auto 15px;
+}
+
+.form {
+  margin: 15px auto 0px;
+}
+
+.form:nth-child(1) {
+  margin: 15px auto 10px;
+}
+
+.form-input {
+  outline: none;
+  border: 1px solid rgb(202, 200, 200);
+  background: transparent;
+  width: 355px;
+  padding: 14px;
+  height: 24px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  font-size: 16px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.form-input::placeholder {
+  color: rgb(194, 191, 191);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input:focus {
+  outline: 2px solid rgb(213, 214, 216);
+}
+
+.form-button {
+  background-color: rgb(191, 92, 221);
+  color: black;
+  padding: 5px 8px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.todo {
+  width: 525px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(145, 59, 172);
+  padding: 5px 12px;
+  margin: 15px auto 0;
+  border-radius: 4px;
+}
+
+.todo p {
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.complete {
+  opacity: 0.6;
+  text-decoration: line-through;
+}
+
+.todo-icons {
+  width: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  cursor: pointer;
 }
