@@ -12,6 +12,7 @@ function TodoForm({addTodos}) {
   return (
     <form className='form' onSubmit={handleSubmit}> 
        <input 
+        type='text'
         className='form-input' 
         placeholder='Add tasks here...' 
         value={value}

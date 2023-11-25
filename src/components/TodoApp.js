@@ -8,6 +8,8 @@ function TodoApp() {
   const [todos, setTodos] = useState([])
 
   useEffect(()=> {
+    document.title = 'Todo App'
+
     const storedTodos = JSON.parse(localStorage.getItem('todos'))
 
     if(storedTodos) {

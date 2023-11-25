@@ -11,6 +11,7 @@ function EditTodoForm({isEditing, task}) {
   return (
     <form className='form' onSubmit={handleSubmit}> 
        <input 
+        type='text'
         className='form-input' 
         placeholder='Update your task' 
         value={value}
